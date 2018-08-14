@@ -3,7 +3,7 @@ const express = require('express')
 const querystring = require('querystring')
 const app = express()
 const mongoose = require('mongoose')
-mongoose.connect( 'mongodb://localhost:27017/klack', { useNewUrlParser: true })
+mongoose.connect( 'mongodb://klack:assword3@ds145921.mlab.com:45921/db5694', { useNewUrlParser: true })
 
 const Message = mongoose.model( 'Message',{
     message: String,
